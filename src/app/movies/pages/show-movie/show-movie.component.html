@@ -1,0 +1,42 @@
+
+
+<div *ngIf="movie" class="grid ">
+
+  <div class="col-12 sm:col-6 md:col-6 xl:col-6">
+    <div class="grid">
+      <mat-card #card1 class="movie-card col-12">
+
+        <movie-card [movie]="movie" [showTitle]="false"></movie-card>
+
+      </mat-card>
+
+    </div>
+
+  </div>
+  <div class="col-12 sm:col-6 md:col-6 xl:col-6">
+    <mat-card #card2 class="movie-card col-12 ">
+
+      <mat-card-header>
+        <mat-card-title>{{movie.title}}</mat-card-title>
+        <mat-card-subtitle>{{movie.original_title }}</mat-card-subtitle>
+        <mat-card-subtitle> <mat-icon>star rate</mat-icon>{{movie.vote_average}}</mat-card-subtitle>
+      </mat-card-header>
+
+    </mat-card>
+
+    <mat-card #card3 class="movie-card col-12 ">
+    
+      <mat-card-content>
+        <mat-card-subtitle>
+          {{movie.overview}}
+        </mat-card-subtitle>
+      </mat-card-content>
+  
+    </mat-card>
+
+  </div>
+ 
+
+
+
+</div>

@@ -1,0 +1,8 @@
+<a [routerLink]="['/movies/show-movie', movie.id]" class="movie-link">
+  <mat-card class="movie-card">
+    <img class="rounded-image" src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="">
+    <mat-card-content class="movie-details mt-2">
+      <p *ngIf="showTitle">{{ movie.title }}</p> <!-- Utiliza la propiedad showTitle para controlar la visibilidad del título -->
+    </mat-card-content>
+  </mat-card>
+</a>

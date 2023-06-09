@@ -1,0 +1,11 @@
+
+ 
+   
+  <div class="swiper-container" #swiperContainer>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let image of images">
+        <img src="https://image.tmdb.org/t/p/w500/{{image.backdrop_path}}" class="full-image">
+      </div>
+    </div>
+    
+  </div>
